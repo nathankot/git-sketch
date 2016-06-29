@@ -4,6 +4,30 @@
 
 _Better diffs for your Sketch files._
 
+Go from this:
+
+```diff
+diff --git a/fixture.sketch b/fixture.sketch
+index c5b1e42..838b58a 100644
+Binary files a/fixture.sketch and b/fixture.sketch differ
+```
+
+To this:
+
+```diff
+diff --git a/fixture.sketch b/fixture.sketch
+index c5b1e42..838b58a 100644
+--- a/fixture.sketch
++++ b/fixture.sketch
+@@ -442,7 +442,7 @@
+     {
+       "id" : "9610356C-A043-45BD-8E93-08DC0E5DBBB0",
+       "name" : "Page 3",
+-      "bounds" : "-142.000000,-104.000000,386.000000,386.000000",
++      "bounds" : "-142.000000,-104.000000,771.000000,386.000000",
+       "layers" : [
+```
+
 ## Installation
 
 Download `git-sketch` and put it somewhere in your `PATH`, ensure that it has
