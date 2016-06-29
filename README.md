@@ -4,6 +4,31 @@
 
 _Better diffs for your Sketch files._
 
+## Installation
+
+Download `git-sketch` and put it somewhere in your `PATH`, ensure that it has
+`u+x` persmission, you could run this if you trust me:
+
+```sh
+curl https://raw.githubusercontent.com/nathankot/git-sketch/master/git-sketch \
+  -o /usr/local/bin/git-sketch
+chmod u+x /usr/local/bin/git-sketch
+```
+
+Setup the `sketch` filter for git, globally:
+
+```sh
+git config --global diff.sketch.textconv git-sketch
+```
+
+Add the following to your local or global `.gitattributes` file:
+
+```
+*.sketch filter=sketch diff=sketch
+```
+
+Enjoy :)
+
 ## License
 
 > Copyright (c) 2016  Nathan Kot
